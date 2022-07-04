@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 88vh;
+}
+.left-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-width: 45%;
+  background-color: rgb(14, 14, 14);
+  .welcome-message {
+    color: white;
+    padding: 28px;
+    margin-left: 10%;
+    border-left: solid 5px grey;
+    font-family: monospace;
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+.right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-width: 55%;
+  background-color: rgb(52, 52, 52);
+  .profile {
+    color: white;
+    padding: 12px;
+    margin-left: 10%;
+    border-left: solid 5px grey;
+    font-family: $font-kanit;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width:1024px){
+  .main {
+    flex-direction: column;
+  }
+
+}

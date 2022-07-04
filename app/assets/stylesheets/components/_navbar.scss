@@ -1,0 +1,139 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 12vh;
+  width: 100%;
+  background-color: black;
+  ul {
+    // height: 12vh;
+    align-content: center;
+    li {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.my-name {
+  letter-spacing: 2px;
+  color: white;
+  h4 {
+    font-family: $font-kanit;
+    font-size: 32px;
+  }
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 25%;
+  margin-bottom: inherit;
+  font-family: monospace;
+  height: 100%;
+}
+
+.burger {
+  display: none;
+}
+.burger div {
+  height: 4px;
+  width: 30px;
+  background-color: white;
+  margin: 4px;
+  border-radius: 2px;
+  transition: all 1.2s ease;
+}
+@media screen and (max-width:768px){
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+
+    height: 50%;
+    background-color: rgba(14, 14, 14, 0.688);
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.75s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .nav-links {
+    width: 40%;
+  }
+}
+.nav-active ul {
+  height: 30vh;
+}
+
+.nav-active {
+  transform: translateX(0%);
+  li {
+    // transition: transform 0.5s ease-in;
+    opacity: 1;
+    transition: all 1.5s ease-in;
+  }
+}
+.open .line1 {
+
+  background-color: rgba(240, 54, 54, 0.733);
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.open .line2 {
+
+  // width: 34px;
+  // transform: translate(-200px,0px) rotate3d(1, 1, 1, 45deg);
+  opacity: 0;
+}
+.open .line3 {
+
+  background-color: rgba(240, 54, 54, 0.733);
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.eff1 {
+  display: block;
+  height: 12vh;
+  transition: .7s;
+  &:hover {
+    // transform: translateX(20px) translateY(-20px) rotate(2turn);
+    transform: scale(1.2)
+  }
+}
+.eff2 {
+  display: block;
+  height: 12vh;
+  transition: .7s;
+  &:hover {
+    // transform: translateX(20px) translateY(-20px) rotate(2turn);
+    transform: scale(1.2)
+  }
+}
+.eff3 {
+  display: block;
+  height: 12vh;
+  transition: .7s;
+  &:hover {
+    // transform: translateX(20px) translateY(-20px) rotate(2turn);
+    transform: scale(1.2)
+  }
+}
