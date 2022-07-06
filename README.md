@@ -2,4 +2,5 @@
 
 NEW MACHINE SETUP
 
-previous project, except for ruby upgrade from 3.0.3 to 3.1.2
+Upgraded my project to a new version of Ruby 3.1.2
+
