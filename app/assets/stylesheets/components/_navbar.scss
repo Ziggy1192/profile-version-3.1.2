@@ -22,7 +22,7 @@
 
 .my-name {
   letter-spacing: 2px;
-  color: white;
+  color: rgb(255, 213, 0);
   h4 {
     font-family: $font-kanit;
     font-size: 32px;
@@ -55,7 +55,7 @@
     cursor: pointer;
   }
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .nav-links {
     position: absolute;
@@ -95,7 +95,7 @@
 }
 .open .line1 {
 
-  background-color: rgba(240, 54, 54, 0.733);
+  background-color: rgb(255, 213, 0);
   transform: rotate(-45deg) translate(-5px,6px);
 }
 .open .line2 {
@@ -106,7 +106,7 @@
 }
 .open .line3 {
 
-  background-color: rgba(240, 54, 54, 0.733);
+  background-color: rgb(255, 213, 0);
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
@@ -137,3 +137,6 @@
     transform: scale(1.2)
   }
 }
+
+
+// rgba(240, 54, 54, 0.733);
