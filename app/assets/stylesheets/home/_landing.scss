@@ -20,8 +20,9 @@
 .profile {
   color: white;
   font-family: $font-kanit;
+  text-align: center;
   p {
-    font-size: 30px;
+    font-size: 34px;
   }
 }
 .socials {
@@ -30,11 +31,20 @@
   img {
     height: 64px;
     width: 64px;
+    opacity: 0.2;
+    transition: all 0.7s;
+     &:hover {
+      opacity: 1;
+     }
   }
   a {
     text-decoration: none;
     padding: 0 16px;
   }
+}
+.projects {
+  height: 100%;
+  width: 100%;
 }
 @media screen and (max-width:1024px){
 
@@ -48,7 +58,8 @@
   }
   .welcome-message {
     h2 {
-      font-size: 32px;
+      font-size: 20px;
+      padding: 8px;
     }
   }
   .profile {
@@ -60,6 +71,7 @@
       img {
         height: 32px;
         width: 32px;
+        opacity: 1;
       }
       a {
         text-decoration: none;
