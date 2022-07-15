@@ -1,7 +1,12 @@
 <div class="nav px-4" data-controller="open-nav-burger">
-  <div class="my-name">
-    <h4><strong>Dziugas B</strong></h4>
-  </div>
+  <div class="socials">
+      <%= link_to "https://github.com/Ziggy1192" do %>
+      <%= image_tag "github.png" %>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/in/dziugasziggy/" do %>
+      <%= image_tag "linkedin.png" %>
+      <% end %>
+    </div>
   <ul class="nav-links" data-open-nav-burger-target="nav" >
     <div class="eff1"><li><%= link_to "Contact me", root_path %></li></div>
     <div class="eff2"><li><%= link_to "Projects", root_path %></li></div>

@@ -1,0 +1,14 @@
+.arrow-down {
+  text-align: center;
+  margin-top: 90px;
+  i {
+    font-size: 60px;
+    opacity: 0.35;
+    transition-duration: 0.5s;
+    &:hover {
+      color: #af4261;
+      opacity: 1;
+      transform: scale(1.1)
+    }
+  }
+}

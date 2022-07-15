@@ -5,7 +5,6 @@
   min-height: 12vh;
   width: 100%;
   background-color: black;
-
   ul {
     // height: 12vh;
     align-content: center;
@@ -23,14 +22,6 @@
   }
 }
 
-.my-name {
-  letter-spacing: 2px;
-  color: rgb(255, 213, 0);
-  h4 {
-    font-family: $font-kanit;
-    font-size: 48px;
-  }
-}
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -40,7 +31,22 @@
   font-family: monospace;
   height: 100%;
 }
-
+.socials {
+  text-align: center;
+  img {
+    height: 64px;
+    width: 64px;
+    opacity: 0.35;
+    transition: all 0.7s;
+     &:hover {
+      opacity: 1;
+     }
+  }
+  a {
+    text-decoration: none;
+    padding: 0 16px;
+  }
+}
 .burger {
   display: none;
 }
@@ -53,6 +59,17 @@
   transition: all 1.2s ease;
 }
 @media screen and (max-width:768px){
+  .nav .socials {
+    img {
+      height: 32px;
+      width: 32px;
+      opacity: 0.9;
+    }
+    a {
+      text-decoration: none;
+      padding: 0 8px;
+    }
+  }
   .burger {
     display: block;
     cursor: pointer;
@@ -149,6 +166,3 @@
     transform: scale(1.2)
   }
 }
-
-
-// rgba(240, 54, 54, 0.733);
