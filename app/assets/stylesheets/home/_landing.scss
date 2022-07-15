@@ -52,6 +52,11 @@
 }
 .project-page {
   height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 @media screen and (max-width:1024px){
 

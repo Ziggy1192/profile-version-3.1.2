@@ -1,0 +1,21 @@
+.mycard {
+  display: flex;
+  flex-direction: row;
+  height:40%;
+  width: 90%;
+  .project-image {
+    height: 100%;
+    width: 35%;
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: initial;
+    }
+  }
+  .project-info {
+    border: solid 1px pink;
+    height: 100%;
+    width: 65%;
+    background-color: rebeccapurple;
+  }
+}
