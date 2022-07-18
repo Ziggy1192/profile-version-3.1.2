@@ -1,46 +1,46 @@
 .mycard {
   display: flex;
   flex-direction: row;
-  height: 35%;
-  width: 90%;
+  height: 35vh;
+  max-width: 90%;
   border: solid 2px white;
   border-radius: 5px;
-  .project-image {
+  .project-info {
     height: 100%;
+    width: 65%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    .tabs {
+      display: grid;
+      flex-direction: row;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-bottom: 1px solid white;
+      color: white;
+      font-size: 24px;
+      align-items: center;
+      height: 100%;
+      li {
+
+        text-align: center;
+        list-style: none;
+        &:hover {
+          height: 100%;
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    .tab-info {
+      background-color: yellow;
+    }
+  }
+  .project-image {
     width: 35%;
     border-right: solid 2px white;
     img {
       height: 100%;
       width: 100%;
       object-fit: fill;
-    }
-  }
-}
-.project-info {
-  height: 100%;
-  width: 65%;
-  display: grid;
-  grid-template-rows: 1fr 4fr;
-  .tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid white;
-  padding: 0;
-  margin: 0;
-  color: white;
-  font-size: 24px;
-    li {
-      text-align: center;
-      align-items: stretch;
-      justify-content: center;
-      list-style: none;
-      flex-grow: 1;
-      &:hover {
-        background-size: 100%;
-        background-color: white;
-        color: black;
-      }
     }
   }
 }
