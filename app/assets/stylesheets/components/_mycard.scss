@@ -1,3 +1,4 @@
+
 .mycard {
   display: flex;
   flex-direction: row;
@@ -6,21 +7,25 @@
   border: solid 2px white;
   border-radius: 5px;
   .project-info {
+    position: relative;
     height: 100%;
     width: 65%;
     display: grid;
     grid-template-rows: 1fr 4fr;
     .tabs {
-      display: grid;
-      flex-direction: row;
-      grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
       border-bottom: 1px solid white;
       color: white;
       font-size: 24px;
       align-items: center;
+      text-align: center;
       li {
-        text-align: center;
+        padding: 30px 0;
+        position: relative;
         list-style: none;
+        flex-grow: 1;
         &:hover {
           background-color: white;
           color: black;
@@ -28,16 +33,44 @@
       }
     }
     .tab-info {
-      background-color: yellow;
+      background-color: pink;
     }
   }
   .project-image {
+    position: relative;
     width: 35%;
     border-right: solid 2px white;
     img {
+      display: block;
       height: 100%;
       width: 100%;
       object-fit: fill;
     }
   }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+  }
+.project-image:hover .overlay {
+  opacity: 1;
 }
