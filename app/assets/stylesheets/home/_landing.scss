@@ -51,23 +51,15 @@
   }
 }
 .project-page {
-  height: 100vh;
+  height: auto;
   background-color: black;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
-.arrow-down {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  i {
-    font-size: 48px;
-  }
-}
 .contact-me {
-  height: 100vh;
+  height: auto;
   background-color: rgb(15, 15, 15);
 }
 
@@ -75,12 +67,6 @@
 
 }
 @media screen and (max-width:768px){
-  .arrow-down {
-
-    i {
-      font-size: 24px;
-    }
-  }
   .my-name {
     font-size: 28px;
   }
