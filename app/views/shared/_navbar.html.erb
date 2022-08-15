@@ -8,9 +8,9 @@
       <% end %>
     </div>
   <ul class="nav-links" data-open-nav-burger-target="nav" >
-    <div class="eff1"><li><%= link_to "Contact me", root_path %></li></div>
-    <div class="eff2"><li><%= link_to "Projects", root_path %></li></div>
-    <div class="eff3"><li><%= link_to "Blog", root_path %></li></div>
+    <div class="eff1"><li><%= link_to "Contact me", anchor: "contact-me" %></li></div>
+    <div class="eff2"><li><%= link_to "Projects", anchor: "project-page" %></li></div>
+    <div class="eff3"><li><%= link_to "Blog", anchor: "wall" %></li></div>
   </ul>
   <div class="burger" data-open-nav-burger-target="burger" data-action="click->open-nav-burger#openMenu"  >
     <div class="line1"></div>
