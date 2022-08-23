@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'home#landing'
+  get 'blog', to: 'home#blog'
 end
