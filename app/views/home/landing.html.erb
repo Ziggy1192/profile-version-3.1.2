@@ -6,7 +6,7 @@
     <h2>based in <strong>London</strong>.</h2>
   </div>
   <div class="profile">
-    <p>Lifelong tech geek at heart, recently embarked on a journey to start a career in web development.
+    <p>Lifelong tech geek at heart, recently embarked on a journey to start a career in web development. I love learning new things and challenging myself.
     Obsessed with trying to simplify tasks and improve solutions to make life easier.
     Have a soft spot for beautiful and functional designs.</p>
       <p>Take a look at my projects down below!</p>
@@ -17,24 +17,24 @@
     <div class="project-image">
       <%= image_tag "tracker.png" %>
       <div class="overlay">
-        <div class="text">yoyoyo ma man</div>
+        <div class="text">Maintenance Tracker</div>
       </div>
     </div>
     <div class="project-info">
       <section>
         <h3>Overview</h3>
-        <p>many many wordsmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many word
-        many many wordmany many wordmany many wordmany many wordmany many wordmany many word</p>
+        <p>A web application which was created to allow its users to create, assign and keep track of tasks required to maintain waterpoint in Rwanda.
+        It was presented as a final project at the very end of the Coding Bootcamp.</p>
       </section>
       <section>
         <h3>Technologies</h3>
-        <p>many many wordsmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many word
-        many many wordmany many wordmany many wordmany many wordmany many wordmany many word</p>
+        <p>Built using Ruby / Ruby on Rails framework, Javascript(Stimulus) and PostgreSQL for data storage. HTML and CSS was used to build the front-end design.<br>
+        Tools used: Sass, Stimulus, Bootstrap, Figma and Heroku. Several API's used for image uploads and geolocation.</p>
       </section>
       <section>
         <h3>Links</h3>
-        <p>many many wordsmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many word
-        many many wordmany many wordmany many wordmany many wordmany many wordmany many word</p>
+        <p><%= link_to "Inuma Maintenance-Tracker", "http://www.inumatracker.click/", target: "_blank", class: "section--link" %>
+        <%= link_to "Github repository", "https://github.com/Ziggy1192/maintenance-tracker/tree/master", target: "_blank", class: "section--link" %></p>
       </section>
     </div>
   </div>
@@ -42,37 +42,57 @@
     <div class="project-image">
       <%= image_tag "oui-chef.png" %>
       <div class="overlay">
-        <div class="text">yoyoyo ma man</div>
+        <div class="text">Oui Chef</div>
       </div>
     </div>
     <div class="project-info">
       <section>
         <h3>Overview</h3>
-        <p>many many wordsmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many word
-        many many wordmany many wordmany many wordmany many wordmany many wordmany many word</p>
+        <p>A very simple CRUD web application allowing customers to book a chef for a private party or even become one and provide their own services!</p>
       </section>
       <section>
         <h3>Technologies</h3>
-        <p>many many wordsmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many word
-        many many wordmany many wordmany many wordmany many wordmany many wordmany many word</p>
+        <p>Built using Ruby / Ruby on Rails framework and SQLite for data storage. HTML and CSS was for the front-end design.<br>
+        Tools used: Sass, Stimulus, Bootstrap, Figma and Heroku. An API's was used for image uploads.</p>
       </section>
       <section>
         <h3>Links</h3>
-        <p>many many wordsmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many wordmany many word
-        many many wordmany many wordmany many wordmany many wordmany many wordmany many word</p>
+        <p><%= link_to "Oui Chef Website", "https://oui-chef-ziggy1192.herokuapp.com/", target: "_blank", class: "section--link" %>
+        <%= link_to "Github repository", "https://github.com/Ziggy1192/oui-chef", target: "_blank", class: "section--link" %></p>
       </section>
-      <div class="tab-info">
-      </div>
     </div>
   </div>
 </div>
 <div id="contact-me">
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="4080b911-8d85-4f63-9557-14d1e3b56cd0">
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-    <button type="submit">Submit Form</button>
-  </form>
+  <div class="technologies">
+      <div class="learning">
+        <h3>Technologies I use: </h3>
+        <ul>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" /></li>
+        </ul>
+      </div>
+      <div class="learning">
+        <h3>Currently I'm learning: </h3>
+          <ul>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /></li>
+          </ul>
+      </div>
+  </div>
+  <div class="contact--form">
+    <h1>Send me a message! 🤓</h1>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="4080b911-8d85-4f63-9557-14d1e3b56cd0">
+      <input placeholder="Name" type="text" name="name" required>
+      <input placeholder="Email address" type="email" name="email" required>
+      <textarea placeholder="Your message..." name="message" required></textarea>
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      <button class="btn btn-primary" type="submit" style="width:40%;align-self:center;">SEND!</button>
+    </form>
+  </div>
 </div>

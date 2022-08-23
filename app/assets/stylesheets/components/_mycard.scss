@@ -1,6 +1,6 @@
 .mycard {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   margin: 4% 4%;
   .overlay {
     position: absolute;
@@ -12,10 +12,10 @@
     width: 100%;
     opacity: 0;
     transition: .8s ease;
-    background-color: #008CBA;
+    background-color: rgb(191, 164, 28);
     .text {
       color: white;
-      font-size: 20px;
+      font-size: 24px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -33,11 +33,11 @@
 
 .project-image {
   position: relative;
-  width: 40%;
+  width: auto;
   img {
     display: block;
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: fill;
     border-radius: 8px;
   }
@@ -50,36 +50,66 @@
   justify-content: space-evenly;
 }
 section {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
   color: white;
   align-items: center;
   p {
-    padding-left: 1%;
     text-align: start;
     font-size: 20px;
+    margin-bottom: 0;
   }
   h3 {
-    width: 15%;
+    width: auto;
     text-align: center;
+    margin-bottom: 0;
   }
 }
-// .mycard {
-//   display: flex;
-//   flex-direction: row;
-//   height: 35vh;
-//   max-width: 90%;
-//   border: solid 2px white;
-//   border-radius: 5px;
-//   .project-info {
-//     position: relative;
-//     height: 100%;
-//     width: 65%;
-//     display: grid;
-//     grid-template-rows: 1fr 4fr;
-//
-//     }
-//     .tab-info {
-//       background-color: pink;
-//     }
-//   }
+.section--link {
+  text-decoration: none !important;
+  color: rgb(191, 164, 28);
+  justify-items: center;
+}
+.section--link:visited {
+  text-decoration: none !important;
+  color: rgb(191, 164, 28);
+}
+.section--link+.section--link{
+  margin-left: 6rem;
+}
+
+@media screen and (max-width:768px){
+  .mycard {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-image{
+    margin-bottom: 1rem;
+
+  }
+  .project-info {
+    border-top: 0;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      p{
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+    }
+    .section--link{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .section--link+.section--link{
+      margin-left: 0rem;
+    }
+  }
+}
