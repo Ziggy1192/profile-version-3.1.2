@@ -81,6 +81,7 @@ section {
   .mycard {
     display: flex;
     flex-direction: column;
+    border-bottom: lightgrey 1px solid;
   }
   .project-image{
     margin-bottom: 1rem;
